@@ -38,12 +38,12 @@ def format(num)
     factors = factors.sort do |a,b|
         b <=> a
     end
-    puts factors.join("*")
+    print factors.join("*")
 end
 
 
 lines = ARGF.read.split("\n")
 lines.each do |line|
-    puts line
+    #puts line
     format(line.to_i)
 end
